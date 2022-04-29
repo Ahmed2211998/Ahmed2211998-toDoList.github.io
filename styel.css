@@ -1,0 +1,107 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.todo-container{
+  width: 800px;
+  margin: 30px auto 0px;
+  background-color: aliceblue;
+}
+.add-task{
+  padding: 15px;
+  background-color: #4997f0e7;
+  position: relative;
+}
+input{
+  display: inline-block;
+  padding: 15px 20px;
+  border: 1px solid #fff;
+  border-radius:25px ;
+  background-color: rgba(224, 73, 73, 0.2);
+  width: calc(100% -  15px);
+  color: blanchedalmond;
+  font-size: 25px;
+}
+input:focus{
+  outline: none;
+}
+.plus{
+
+  position: absolute;
+
+  height: 70px;
+  width:60px;
+  background-color:#fff;
+  right: 15px;
+  
+  border-radius: 50%;
+  line-height: 43px;
+  text-align: center;
+  padding-top: 10px;
+  color: #4997f0e7;
+  cursor: pointer;
+  font-size: 60px;
+  transition: transform 2s;
+}
+.plus:hover{
+  transform: rotate(360deg);
+  color: rgba(106, 104, 199, 0.767);
+  background-color: rgb(230, 195, 171);
+}
+.task-content{
+  padding: 15px;
+}
+.No-taskes-message{
+color: darkblue;
+font-size: 20px;
+}
+.task-content > span{
+  display: block;
+  background-color:rgb(230, 195, 171) ;
+  padding: 10px;
+}
+.task-content > span:not(:last-child){
+  margin-bottom: 15px;
+}
+.Delete{
+  float: right;
+  background-color: #e91e91;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+.task-state{
+  overflow: hidden;
+  margin: 10px auto;
+}
+.task-count span,.task-complet span{
+  color: #Fff;
+padding: 1px 5px;
+border-radius: 4px;
+
+}
+.task-complet span{
+  background-color: #e91e91;
+
+}
+.task-count span{
+  background-color: darkblue;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.task-box.finish{
+  text-decoration: line-through;
+}
